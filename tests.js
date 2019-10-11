@@ -13,11 +13,27 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
-describe('helloWorld', function () {
-    it('should ', function () {
-        expect(typeof helloWorld).toBe('function');
+
+//Unit tests for the isFive function
+
+describe('isFive', function() {
+    it('should be a function', function() {
+        expect(typeof isFive).toBe('function');
     });
-})
+    it('should be a number', function(){
+        expect(typeof isFive()).toBe('number');
+    });
+    it('should return a boolean no matter what the input', function() {
+        expect(typeof isFive()).toBe("boolean");
+    });
+
+});
+//Unit tests for the isEven function
+describe('isEven', function () {
+    it('should be a function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+});
 
 
 
